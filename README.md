@@ -1,5 +1,5 @@
 
-# Hexlet-PSR-Linner
+# Hexlet-PSR-Linter
 
 [![Build Status](https://travis-ci.org/StalkAlex/hexlet-psr-linter.svg?branch=master)](https://travis-ci.org/StalkAlex/hexlet-psr-linter)
 [![Code Climate](https://codeclimate.com/github/StalkAlex/hexlet-psr-linter/badges/gpa.svg)](https://codeclimate.com/github/StalkAlex/hexlet-psr-linter)
