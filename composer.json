@@ -1,11 +1,11 @@
 {
-  "name": "hexlet/php-package",
-  "bin": ["bin/php-package"],
+  "name": "StalkAllex/hexlet-psr-linter",
+  "bin": ["bin/psrlint"],
   "type": "library",
   "authors": [
     {
-      "name": "Kirill Mokevnin",
-      "email": "mokevnin@gmail.com"
+      "name": "Alex Aboimov",
+      "email": "akasstalkalex@gmail.com"
     }
   ],
   "autoload": {
