@@ -1,7 +1,9 @@
 {
-  "name": "StalkAllex/hexlet-psr-linter",
+  "name": "stalkalex/hexlet-psr-linter",
+  "license": "opensource",
   "bin": ["bin/psrlint"],
   "type": "library",
+  "description": "Linter for PHP code",
   "authors": [
     {
       "name": "Alex Aboimov",
@@ -10,10 +12,13 @@
   ],
   "autoload": {
     "psr-4": {
-      "PhpPackage\\": "src/"
+      "HexletPsrLinter\\": "src/",
+      "HexletPsrLinterTest\\": "tests/"
     }
   },
-  "require": {},
+  "require": {
+    "cilex/cilex": "dev-master"
+  },
   "require-dev": {
     "phpunit/phpunit": "*",
     "squizlabs/php_codesniffer": "*",
