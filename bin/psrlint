@@ -5,6 +5,6 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 $app = new \Cilex\Application('HexletPsrLinter');
-$app->command(new \HexletPstLinter\LintCommand());
+$app->command(new \HexletPsrLinter\LintCommand());
 $app->run();
 

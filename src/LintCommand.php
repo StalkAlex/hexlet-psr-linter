@@ -6,7 +6,7 @@
  * Time: 16:43
  */
 
-namespace HexletPstLinter;
+namespace HexletPsrLinter;
 
 
 use Cilex\Command\Command;
@@ -21,7 +21,7 @@ class LintCommand extends Command
     protected function configure()
     {
         $this
-            ->setName('demo:info')
+            ->setName('lint')
             ->setDescription('Analyze your php code');
     }
 

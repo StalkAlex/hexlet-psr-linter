@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3838472df40a435af15dbc415ba81cdd",
-    "content-hash": "897a926fe3d4b37bbbc7d4704ba265f4",
+    "hash": "e8d60c2f5e42928e39011c241964e65a",
+    "content-hash": "3282c617e7a420cc90b53665d10a1aac",
     "packages": [
         {
             "name": "cilex/cilex",
@@ -603,6 +603,52 @@
             ],
             "abandoned": "guzzlehttp/guzzle",
             "time": "2015-03-18 18:23:50"
+        },
+        {
+            "name": "mikey179/vfsStream",
+            "version": "v1.6.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikey179/vfsStream.git",
+                "reference": "0247f57b2245e8ad2e689d7cee754b45fbabd592"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mikey179/vfsStream/zipball/0247f57b2245e8ad2e689d7cee754b45fbabd592",
+                "reference": "0247f57b2245e8ad2e689d7cee754b45fbabd592",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.6.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "org\\bovigo\\vfs\\": "src/main/php"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Frank Kleine",
+                    "homepage": "http://frankkleine.de/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Virtual file system to mock the real file system in unit tests.",
+            "homepage": "http://vfs.bovigo.org/",
+            "time": "2016-07-18 14:02:57"
         },
         {
             "name": "myclabs/deep-copy",
@@ -2236,7 +2282,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "cilex/cilex": 20,
-        "codeclimate/php-test-reporter": 20
+        "codeclimate/php-test-reporter": 20,
+        "mikey179/vfsstream": 0
     },
     "prefer-stable": false,
     "prefer-lowest": false,
