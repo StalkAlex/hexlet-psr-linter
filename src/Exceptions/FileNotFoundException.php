@@ -9,7 +9,7 @@
 namespace HexletPsrLinter\Exceptions;
 
 
-class FileNotFoundException extends HexletPsrLinterBaseException
+class FileNotFoundException extends HPLBaseException
 {
 
 }

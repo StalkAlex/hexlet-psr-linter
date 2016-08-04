@@ -68,7 +68,9 @@ Vagrant.configure("2") do |config|
    config.vm.provision "shell", inline: <<-SHELL
      sudo apt-get update
      sudo apt-get upgrade
-     sudo apt-get -y install php php-curl php-zip php-xml php-mbstring
+     sudo apt-get -y install php php-curl php-zip php-xml php-mbstring php-xdebug
+     composer global require psy/psysh:@stable
+     echo 'export PATH="$PATH:/home/ubuntu/.config/composer/vendor/bin/"' >> ~/.bashrc
      curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
      cd /vagrant && composer install
    SHELL

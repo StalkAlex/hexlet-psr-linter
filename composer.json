@@ -23,6 +23,7 @@
     "phpunit/phpunit": "*",
     "squizlabs/php_codesniffer": "*",
     "codeclimate/php-test-reporter": "dev-master",
-    "mikey179/vfsStream": "@stable"
+    "mikey179/vfsStream": "@stable",
+    "psy/psysh": "@stable"
   }
 }

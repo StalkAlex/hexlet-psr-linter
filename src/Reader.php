@@ -8,12 +8,16 @@
 
 namespace HexletPsrLinter;
 
+use HexletPsrLinter\Exceptions\FileNotFoundException;
 
 class Reader
 {
     public static function readFile($filePath)
     {
-
+        if (!file_exists($filePath)) {
+            throw new FileNotFoundException();
+        }
+        return file_get_contents($filePath);
     }
 
     public static function readDirectory($dirPath)

@@ -13,32 +13,35 @@ use HexletPsrLinter\Reader;
 use org\bovigo\vfs\vfsStream;
 use org\bovigo\vfs\vfsStreamDirectory;
 use PHPUnit\Framework\TestCase;
-use HexletPsrLinter\Exceptions\FileNotFoundException;
 
 class FileTest extends TestCase
 {
+    private $content = '<?php echo "test"';
     /** @var  vfsStreamDirectory */
     private $root;
-    private $content = '<?php echo "test"';
 
     public function setUp()
     {
-        $this->root = vfsStream::create([
-            'code.php' => $this->content
-        ]);
+        vfsStream::setup();
+        $struct = [
+            'src' => [
+                'code.php' => $this->content
+            ]
+        ];
+        $this->root = vfsStream::create($struct);
     }
 
     public function testReadExistingFile()
     {
-        $existingString = Reader::readFile('vfs://root/code.php');
-        static::assertTrue($existingString, $this->content);
+        $existingString = Reader::readFile('vfs://root/src/code.php');
+        static::assertEquals($existingString, $this->content);
     }
 
     /**
-     * @expectedException FileNotFoundException
+     * @expectedException \HexletPsrLinter\Exceptions\FileNotFoundException
      */
     public function testNonExistingFile()
     {
-        Reader::readFile('vfs://root/test.php');
+        Reader::readFile('_data/test.php');
     }
 }

@@ -9,7 +9,7 @@
 
 namespace HexletPsrLinter\Exceptions;
 
-abstract class HexletPsrLinterBaseException
+abstract class HPLBaseException extends \Exception
 {
 
 }
