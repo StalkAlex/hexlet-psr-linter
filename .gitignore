@@ -2,4 +2,6 @@
 logs
 *.swo
 *.swp
+*.log
 .idea/
+.vagrant
